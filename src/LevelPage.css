@@ -1,0 +1,136 @@
+.level-page {
+  display: flex;
+  min-height: calc(100vh - 60px); /* Adjust for navbar height */
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.lesson {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lesson h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.lesson p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.lesson pre {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.badge-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #e7f3ff;
+  border-radius: 8px;
+}
+
+.badge-box h3 {
+  font-size: 1.6em;
+  color: #1a73e8;
+}
+
+.next-level-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.next-level-btn:hover {
+  background-color: #1557b0;
+}
+
+.compiler-panel {
+  width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.compiler-panel h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.run-btn {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.run-btn:hover {
+  background-color: #218838;
+}
+
+.output-box {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.output-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.output-box pre {
+  margin: 0;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+}

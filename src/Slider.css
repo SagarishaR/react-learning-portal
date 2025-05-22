@@ -1,0 +1,148 @@
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  margin-top: 0;
+  padding-top: 0px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slider-item {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-content {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  left: auto;
+  color: white;
+  max-width: 700px;
+  overflow: visible;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #007bff;
+}
+
+.dot:hover {
+  background-color: #0056b3;
+}
+
+/* Small card inside slide */
+.small-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%); /* Gradient background for a modern look */
+  color: #1a1a1a; /* Darker text for better contrast */
+  padding: 20px 25px; /* Increased padding for better spacing */
+  border-radius: 15px; /* Softer, more modern border-radius */
+  margin-top: 15px;
+  width: 300px; /* Slightly wider for better readability */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+  text-align: left; /* Changed to left for a more natural reading flow */
+  border: 1px solid rgba(0, 123, 255, 0.2); /* Subtle border with a hint of brand color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.small-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.small-card h4 {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  font-size: 20px; /* Slightly larger for emphasis */
+  font-weight: 600; /* Semi-bold for hierarchy */
+  color: #007bff; /* Brand color for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+  letter-spacing: 0.5px; /* Subtle letter spacing for elegance */
+}
+
+.small-card p {
+  font-family: 'Open Sans', sans-serif; /* Readable, professional font */
+  font-size: 16px; /* Comfortable size for body text */
+  line-height: 1.6; /* Improved readability with line spacing */
+  color: #4a4a4a; /* Softer dark gray for text */
+  margin-bottom: 15px; /* Space before the button */
+}
+
+.small-card-button {
+  padding: 12px 24px; /* Larger padding for a more clickable area */
+  font-size: 16px; /* Slightly larger text */
+  font-family: 'Poppins', sans-serif; /* Consistent font with heading */
+  font-weight: 500; /* Medium weight for balance */
+  background: linear-gradient(90deg, #28a745 0%, #34c759 100%); /* Gradient for a vibrant button */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Softer corners */
+  cursor: pointer;
+  display: block;
+  margin-left: auto; /* Keep the button aligned to the right */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.small-card-button:hover {
+  background: linear-gradient(90deg, #34c759 0%, #28a745 100%); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}

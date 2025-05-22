@@ -1,0 +1,59 @@
+.experts-section {
+    
+    padding: 60px 20px;
+    background: linear-gradient(to top, #ffffff, #a2c2e3);
+  }
+  
+  .experts-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .expert-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+  }
+  
+  .left-img {
+    flex-direction: row;
+  }
+  
+  .right-img {
+    flex-direction: row-reverse;
+  }
+  
+  .expert-image {
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expert-content {
+    flex: 1;
+    padding: 40px;
+    max-width: 500px;
+    font-size:20px;
+  }
+  
+  .expert-content h3 {
+    margin: 0 0 20px;
+  }
+  
+  .expert-title {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .expert-quote {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+  }
+  

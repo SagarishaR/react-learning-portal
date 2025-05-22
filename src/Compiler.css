@@ -1,0 +1,41 @@
+.compiler-container {
+  padding: 80px 20px 60px;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e0e7ff 100%);
+  min-height: calc(100vh - 64px);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.editor-container {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.controls {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.output-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.output-text {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #333;
+  white-space: pre-wrap;
+  min-height: 100px;
+}
